@@ -28,9 +28,12 @@ ___
 `<package_name>@<version>` - version can be `latest`, exact version like `1.22` and `umbrella` (for umbrella apps).
 
 
-`-O` - `{..., override: true}` *e.g `parn add phoenix@latest -O`*
-`-D` - `{..., only: :dev}`
-`-P` - `{..., only: :prod}`
+- `-O` - `{..., override: true}` *e.g `parn add phoenix@latest -O`*
+
+- `-D` - `{..., only: :dev}`
+
+- `-P` - `{..., only: :prod}`
+
 
 # Features
 - Just works 
