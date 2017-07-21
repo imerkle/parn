@@ -4,12 +4,12 @@ It installs hex packages in the elixir app from http://hex.pm.
 
 Name is taken from yarn nothing else 👅.
 
-## INSTALLATION 
+## INSTALLATION
 
-  `npm i -g parn` 
-  or 
+  `npm i -g parn`
+  or
   `yarn global add parn`
-  
+
 ## USAGE
 
 
@@ -19,6 +19,10 @@ Name is taken from yarn nothing else 👅.
 ##### Remove Packages
 
 `parn remove ecto phoenix`
+
+##### Lists Packages
+
+`parn list`
 
 
 ##### Options
@@ -39,7 +43,7 @@ Name is taken from yarn nothing else 👅.
 
 
 # Features
-- Just works 
+- Just works
 - Has Colors
 # Caveats:
 - It backups all modified version of `mix.exs` files in `./prod_exs/` because its just workaround and you may never know what it might break up. (Its automatically ignored in gitignore)

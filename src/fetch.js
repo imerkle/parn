@@ -340,4 +340,9 @@ const removePackage = (packageNames) => {
     });
   });
 }
-export {addPackage, removePackage};
+const listPackages = () => {
+  hexRunner(`mix deps.tree`, () => {
+    footerPrint();
+  });
+}
+export {addPackage, removePackage, listPackages};

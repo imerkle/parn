@@ -1,16 +1,9 @@
 #!/usr/bin/env node
 
-import {addPackage, removePackage} from './fetch.js';
-import chalk from 'chalk';
+import {addPackage, removePackage, listPackages} from './fetch.js';
 //export default tmp;
 
 const program = require('commander');
-const addPackageX = (package_name, opts) => {
-   addPackage(package_name, opts);
-}
-const removePackageX = (package_name) => {
-  removePackage(package_name);
-}
 
 program
   .version('0.0.1')
@@ -19,10 +12,14 @@ program
   .option('-O','override: true')
   .option('-D','only: :dev')
   .option('-P','only: :prod')
-  .action(addPackageX);
+  .action(addPackage);
 
 program
   .command('remove <package_name...>')
-  .action(removePackageX);
+  .action(removePackage);
+
+  program
+    .command('list')
+    .action(listPackages);
 
  program.parse(process.argv);

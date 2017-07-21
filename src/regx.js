@@ -63,26 +63,26 @@ export const parn = ({
     let smain = elixirToJS(initialPackage);
     let packageObject = fixJson(smain);
     let replacedPackagesIndex = [];
+    let packageObject_tmp = [];
     newUpdatedOnes.map((o, i) => {
         const k = Object.keys(o)[0];
         let replaced = false;
         packageObject.map((ox, ix) => {
             if (!replaced && k == Object.keys(ox)[0]) {
+            		if(JSON.stringify(packageObject[ix]) != JSON.stringify(o)){
+            		   replacedPackagesIndex.push(i);
+            		}
                 Object.assign(packageObject[ix],o);
                 replaced = true;
-
-		if(JSON.stringify(packageObject[ix]) != JSON.stringify(o)){
-		   replacedPackagesIndex.push(i);
-		}
             }
         });
         if (!replaced) {
-            packageObject.push(o);
- 	    replacedPackagesIndex.push(i);
+            packageObject_tmp.push(o);
+ 	          replacedPackagesIndex.push(i);
         }
     });
-
-
+    packageObject = packageObject.concat(packageObject_tmp);
+    
     deleteEmLads.map((o, i) => {
         const k = o;
         let deleted = false;
