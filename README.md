@@ -1,19 +1,17 @@
 ## 🖖PARN 🖖
-___
 
 It installs hex packages in the elixir app from http://hex.pm.
 
 Name is taken from yarn nothing else 👅.
 
 ## INSTALLATION 
-___
 
   `npm i -g parn` 
   or 
   `yarn global add parn`
   
 ## USAGE
-___
+
 
 ##### Install Packages
 `parn add ecto phoenix@latest mariaex@0.7.8 myapp@umbrella`
