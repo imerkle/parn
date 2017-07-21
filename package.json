@@ -1,0 +1,24 @@
+{
+  "name": "parn",
+  "version": "1.2.3",
+  "repository": "git@github.com:dsslimshaddy/parn.git",
+  "author": "Slim Shady <dsslimshaddy@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "babel --presets es2015 src/ --out-dir build/ && yarn run copy",
+    "copy": "cp package.json build/ && cp README.md build/"
+  },
+  "bin": {
+    "parn": "./index.js"
+  },
+  "dependencies": {
+    "chalk": "^2.0.1",
+    "commander": "^2.11.0",
+    "find-up": "^2.1.0",
+    "scrape-it": "^3.3.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1"
+  }
+}

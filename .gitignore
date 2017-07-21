@@ -1,0 +1,5 @@
+.parn_exs
+build
+node_modules
+demo
+*.log
