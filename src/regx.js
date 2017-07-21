@@ -90,6 +90,7 @@ export const parn = ({
             if (!deleted && k == Object.keys(ox)[0]) {
                 packageObject.splice(ix, 1);
                 deleted = true;
+                replacedPackagesIndex.push(i);
             }
         });
     });

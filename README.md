@@ -42,5 +42,5 @@ Name is taken from yarn nothing else 👅.
 - Just works 
 - Has Colors
 # Caveats:
-- It backups all modified version of `mix.exs` files in `./prod_exs/` because its just workaround and you may never know what it might break up. 
+- It backups all modified version of `mix.exs` files in `./prod_exs/` because its just workaround and you may never know what it might break up. (Its automatically ignored in gitignore)
 - It scraps data from hex.pm ( because i didnt find any proper api )
