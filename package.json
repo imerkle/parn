@@ -15,7 +15,7 @@
     "chalk": "^2.0.1",
     "commander": "^2.11.0",
     "find-up": "^2.1.0",
-    "scrape-it": "^3.3.2"
+    "scrape-it": "^5.3.0"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
